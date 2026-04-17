@@ -5,9 +5,9 @@ import './Navbar.css'
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-[rgba(10,10,15,0.8)] backdrop-blur-xl border-b border-b-[rgba(42,42,58,0.4)]">
+        <nav>
             {/* Top bar */}
-            <div className="px-6 py-4 flex justify-between items-center">
+            <div className="flex justify-between items-center">
                 <a href="#" className="nav-logo font1 text-2xl font-bold text-(--white) tracking-[-0.5px]">
                     Nusrat<span className="text-(--accent)">.</span>
                 </a>
@@ -31,7 +31,7 @@ const Navbar = () => {
 
             {/* Mobile dropdown — now INSIDE <nav> */}
             {open && (
-                <div className="md:hidden w-11/12 mx-auto mb-4 rounded-2xl border border-white/10 bg-[rgba(10,10,15,0.95)] backdrop-blur-xl px-6 py-6">
+                <div className="md:hidden w-11/12 mx-auto mb-4 rounded-2xl border border-white/10 bg-[rgba(10,10,15,0.95)] backdrop-blur-xl !px-6 !py-6 !mt-1.5">
                     <ul className="nav-links flex flex-col gap-5 list-none">
                         <li>
                             <a href="#about" onClick={() => setOpen(false)} className="block hover:text-(--accent) transition">
