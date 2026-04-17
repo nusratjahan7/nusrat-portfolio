@@ -2,9 +2,7 @@ footer {
     background: var(--surface);
     border-top: 1px solid var(--border);
     padding: 40px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
   }
   .footer-logo {
     font-size: 18px;
