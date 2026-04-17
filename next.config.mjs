@@ -7,6 +7,7 @@ const nextConfig = {
       "cdn.jsdelivr.net",
       "vectorlogo.zone",
       "assets.vercel.com",
+      "cdn.simpleicons.org",
     ],
   },
 };

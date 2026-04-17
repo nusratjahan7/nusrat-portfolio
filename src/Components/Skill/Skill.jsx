@@ -1,3 +1,4 @@
+import ScrollSkill from './ScrollSkill';
 import './skill.css';
 import Image from "next/image";
 
@@ -34,7 +35,6 @@ const Skill = () => {
           </div>
         ))}
       </div>
-      
     </section>
   );
 };

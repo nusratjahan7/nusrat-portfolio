@@ -1,0 +1,71 @@
+/* Base Style */
+.tools-scroll{
+    margin-bottom: 10px;
+}
+
+.tool-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;  /* Increase space between the icon and text */
+  padding: 10px 20px;
+  border-radius: 50px; /* Larger border radius for rounded pill shape */
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  height: 40px; /* Set fixed height */
+  min-width: 120px; /* Set min-width to prevent squeezing */
+  text-align: center;
+}
+
+/* Icon styling */
+.tool-pill img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.tool-pill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Support */
+.tool-pill.dark\:invert img {
+  filter: invert(1);
+}
+
+/* Animation for the scroll effect */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.tools-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll 15s linear infinite;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .tool-pill {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .tool-pill img {
+    width: 18px;
+    height: 18px;
+  }
+}
