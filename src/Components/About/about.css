@@ -1,0 +1,96 @@
+ #about { background: var(--surface); }
+  .about-grid {
+    gap: 80px;
+    align-items: center;
+    margin-top: 64px;
+  }
+  .about-image-wrap {
+    position: relative;
+  }
+  .about-image-box {
+    width: 100%;
+    aspect-ratio: 3/4;
+    padding: 30px;
+    background: var(--card);
+    border-radius: 24px;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .avatar-initials {
+    font-family: 'Playfair Display', serif;
+    font-size: 96px;
+    font-weight: 900;
+    color: rgba(200,245,66,0.15);
+    z-index: 1;
+    letter-spacing: -4px;
+  }
+  .about-image-accent {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(200,245,66,0.08);
+    border: 1px solid rgba(200,245,66,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-family: 'Space Mono', monospace;
+    color: var(--accent);
+    text-align: center;
+    line-height: 1.4;
+  }
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.85;
+    color: var(--muted);
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+  .about-text p strong { color: var(--text); font-weight: 500; }
+  .education-card {
+    margin-top: 36px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 12px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .edu-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .edu-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white);
+  }
+  .edu-sub {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 4px;
+    font-family: 'Space Mono', monospace;
+  }
+  .edu-badge {
+    margin-top: 8px;
+    display: inline-block;
+    background: rgba(200,245,66,0.1);
+    border: 1px solid rgba(200,245,66,0.2);
+    color: var(--accent);
+    font-size: 10px;
+    padding: 3px 10px;
+    border-radius: 100px;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 0.05em;
+  }
