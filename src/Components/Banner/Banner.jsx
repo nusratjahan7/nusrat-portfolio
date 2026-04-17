@@ -46,7 +46,7 @@ const Banner = () => {
 
             <Stats />
 
-            <div className="scroll-indicator md:hidden absolute right-1 top-80">
+            <div className="scroll-indicator md:hidden absolute right-1 top-50">
                 <div className="scroll-line"></div>
                 Scroll to explore
             </div>
