@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import './Projects.css';
 import digi from '@/assests/digitool.png';
+import keenKeeper from '@/assests/keenkeeper.png';
 import Link from 'next/link';
 
 const projects = [
@@ -14,15 +15,16 @@ const projects = [
         live: "https://digitools-web.vercel.app/",
     },
     {
-        num: "02", emoji: "🌤️",
+        num: "02", img: keenKeeper,
         bg: "linear-gradient(135deg, #1a1a2e, #16213e, #0f3460)",
-        tags: ["JavaScript", "API", "CSS3"],
-        name: "WeatherNow App",
+        tags: ["React", "Next.js", "Recharts"],
+        name: "KeenKeeper",
         desc: "Real-time weather application using OpenWeather API. Features current conditions, 5-day forecast, and animated weather icons.",
-
+        git: "https://github.com/nusratjahan7/kin-keeper",
+        live: "https://kin-keeper-nu.vercel.app/",
     },
     {
-        num: "03", emoji: "✅",
+        num: "03", 
         bg: "linear-gradient(135deg, #0d1117, #161b22, #1f2937)",
         tags: ["React", "localStorage", "Hooks"],
         name: "TaskFlow — Todo App",
