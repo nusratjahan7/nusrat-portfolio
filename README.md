@@ -32,6 +32,8 @@ A modern, responsive developer portfolio built with **Next.js**, **Tailwind CSS*
 
 ## 📁 Project Structure
 
+```
+
 nusrat-portfolio/
 │
 ├── public/
@@ -88,6 +90,7 @@ nusrat-portfolio/
 ├── .gitignore
 ├── AGENTS.md
 └── README.md
+```
 
 ---
 
