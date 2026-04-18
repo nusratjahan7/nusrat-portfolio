@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image';
 import './Projects.css';
+import { motion } from 'framer-motion';
 import digi from '@/assets/digitool.png';
 import keenKeeper from '@/assets/keenkeeper.png';
 import hero from '@/assets/hero-apps.png';
@@ -38,7 +40,7 @@ const projects = [
         tags: ["React", "Tailwind", "ES6+"],
         name: "TerraVerde",
         desc: "TerraVerde is a premium agricultural website with a cinematic and modern design. It presents sustainable farming solutions through smooth animations, clean UI, and a nature-inspired color palette.",
-         git: "https://github.com/nusratjahan7/terra-verde",
+        git: "https://github.com/nusratjahan7/terra-verde",
         live: "https://terra-verde-vert.vercel.app/",
     },
 ];
@@ -46,13 +48,32 @@ const projects = [
 const Projects = () => {
     return (
         <section id="projects">
-            <div className="section-tag">// My Work</div>
-            <h2 className="section-title">Recent <em>Projects</em></h2>
-            <div className="divider"></div>
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
+                className="section-tag">// My Work</motion.div>
+            <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
+                className="section-title">Recent <em>Projects</em></motion.h2>
+            <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true, amount: 0.5 }}
+                className="divider"></motion.div>
 
             <div className="projects-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
                 {projects.map((project) => (
-                    <div
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.9, delay: 0.1 }}
+                        viewport={{ once: true, amount: 0.3 }}
                         key={project.num}
                         className={`project-card ${project.featured ? "featured" : ""} reveal`}
                     >
@@ -99,7 +120,7 @@ const Projects = () => {
 
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </section>
