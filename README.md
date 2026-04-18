@@ -41,7 +41,7 @@ nusrat-portfolio/
 │   │   ├── favicon.ico
 │   │   ├── globals.css
 │   │   ├── layout.js
-│   │   └── page.js               
+│   │   └── page.js
 │   │
 │   ├── assets/
 │   │   ├── animated.png
@@ -84,16 +84,9 @@ nusrat-portfolio/
 │   │   │   └── Skill.jsx
 │   │   │
 │   │   └── CursorEffect.jsx
-│   │
+│
 ├── .gitignore
 ├── AGENTS.md
-├── CLAUDE.md
-├── eslint.config.mjs
-├── jsconfig.json
-├── next.config.mjs
-├── package.json
-├── package-lock.json
-├── postcss.config.mjs
 └── README.md
 
 ---
