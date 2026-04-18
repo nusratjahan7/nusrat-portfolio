@@ -94,3 +94,11 @@ body::before {
     line-height: 1.0;
   }
   .section-title em { font-style: italic; color: var(--accent); }
+
+  /* Divider */
+  .divider {
+    width: 60px;
+    height: 2px;
+    background: var(--accent);
+    margin: 20px 0 40px;
+  }
