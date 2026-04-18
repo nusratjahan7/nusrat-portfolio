@@ -1,9 +1,11 @@
 "use client"
 import { useState } from 'react';
 import './Navbar.css'
+import useActiveSection from './useActiveSection';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+    useActiveSection();
     return (
         <nav>
             {/* Top bar */}
