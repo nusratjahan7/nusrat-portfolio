@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
 import './about.css';
-import animatedImg from '@/assests/animated.png';
+import animatedImg from '@/assets/animated.png';
 import { motion } from 'framer-motion';
 
 const About = () => {

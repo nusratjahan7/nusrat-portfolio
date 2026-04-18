@@ -1,14 +1,15 @@
 import Image from 'next/image';
 import './Projects.css';
-import digi from '@/assests/digitool.png';
-import keenKeeper from '@/assests/keenkeeper.png';
+import digi from '@/assets/digitool.png';
+import keenKeeper from '@/assets/keenkeeper.png';
+import hero from '@/assets/hero-apps.png';
+import terra from '@/assets/terra.png';
 import Link from 'next/link';
 
 const projects = [
     {
         num: "01", img: digi,
-        bg: "linear-gradient(135deg, #0f2027, #203a43, #2c5364)",
-        tags: ["React", "Tailwind CSS", "JavaScript"],
+        tags: ["React", "Tailwind CSS", "ES6+"],
         name: "DigiTools",
         desc: "DigiTools Web is a modern and responsive web application that provides a collection of useful digital tools in one place.",
         git: "https://github.com/nusratjahan7/Payoo-Resources",
@@ -16,36 +17,27 @@ const projects = [
     },
     {
         num: "02", img: keenKeeper,
-        bg: "linear-gradient(135deg, #1a1a2e, #16213e, #0f3460)",
         tags: ["React", "Next.js", "Recharts"],
         name: "KeenKeeper",
-        desc: "Real-time weather application using OpenWeather API. Features current conditions, 5-day forecast, and animated weather icons.",
+        desc: "FriendTrack helps you track your relationships, set contact goals, and log interactions so you never lose touch with friends.",
         git: "https://github.com/nusratjahan7/kin-keeper",
         live: "https://kin-keeper-nu.vercel.app/",
     },
     {
-        num: "03", 
-        bg: "linear-gradient(135deg, #0d1117, #161b22, #1f2937)",
-        tags: ["React", "localStorage", "Hooks"],
-        name: "TaskFlow — Todo App",
-        desc: "A sleek task management app with drag-and-drop, categories, and local persistence. Demonstrates React state management and hooks.",
-
+        num: "03", img: hero,
+        tags: ["React", "Tailwind CSS", "Hooks"],
+        name: "AppVault",
+        desc: "Hero Apps is a collection of multiple small web applications built to practice and strengthen core JavaScript and frontend development skills.",
+        git: "https://github.com/nusratjahan7/hero-apps",
+        live: "https://hero-apps-three.vercel.app/",
     },
     {
-        num: "04", emoji: "📝",
-        bg: "linear-gradient(135deg, #1a0533, #2d1b69, #11998e)",
-        tags: ["Next.js", "Tailwind", "Markdown"],
-        name: "BlogSpace — Blog Platform",
-        desc: "A minimal blog platform built with Next.js featuring SSG, markdown support, dark mode, and SEO optimization.",
-
-    },
-    {
-        num: "05", emoji: "🧮",
-        bg: "linear-gradient(135deg, #0f0c29, #302b63, #24243e)",
-        tags: ["HTML", "CSS", "JavaScript"],
-        name: "CalcPro — Calculator",
-        desc: "A beautiful, fully functional calculator with keyboard support, history, and multiple themes.",
-
+        num: "04", img: terra,
+        tags: ["React", "Tailwind", "ES6+"],
+        name: "TerraVerde",
+        desc: "TerraVerde is a premium agricultural website with a cinematic and modern design. It presents sustainable farming solutions through smooth animations, clean UI, and a nature-inspired color palette.",
+         git: "https://github.com/nusratjahan7/terra-verde",
+        live: "https://terra-verde-vert.vercel.app/",
     },
 ];
 
