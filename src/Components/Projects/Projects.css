@@ -140,15 +140,3 @@
      gap: 5px;
  }
 
- .proj-link:hover {
-     color: var(--accent);
- }
-
-
- .proj-link::before {
-     content: '';
-     width: 5px;
-     height: 5px;
-     border-radius: 50%;
-     background: var(--accent);
- }

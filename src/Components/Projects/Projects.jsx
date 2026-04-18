@@ -5,6 +5,8 @@ import keenKeeper from '@/assets/keenkeeper.png';
 import hero from '@/assets/hero-apps.png';
 import terra from '@/assets/terra.png';
 import Link from 'next/link';
+import { FiGithub } from 'react-icons/fi';
+import { GoLinkExternal } from 'react-icons/go';
 
 const projects = [
     {
@@ -85,12 +87,12 @@ const Projects = () => {
                                 <div className="project-links">
                                     {project.git && (
                                         <Link href={project.git} target="_blank" rel="noopener noreferrer">
-                                            <button className="proj-link border rounded-full">GitHub</button>
+                                            <button className="proj-link border rounded-full"><FiGithub /> GitHub</button>
                                         </Link>
                                     )}
                                     {project.live && (
                                         <Link href={project.live} target="_blank" rel="noopener noreferrer">
-                                            <button className="proj-link border rounded-full">Live Demo</button>
+                                            <button className="proj-link border rounded-full"><GoLinkExternal /> Live Demo</button>
                                         </Link>
                                     )}
                                 </div>
